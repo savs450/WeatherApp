@@ -69,7 +69,7 @@ minutes = minutes < 10 ? '0' + minutes : minutes;
 let currentTime = hours + ':' + minutes + ' ' + ampm;
 
   return (
-    <div>
+    <div className="weathercard-container">
       <div className="weatherCard">
         <div className="temperature">
           <img src={icon} alt={weather}></img>

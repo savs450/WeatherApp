@@ -46,6 +46,7 @@
       justify-content: center;
       align-content: center;
     }
+
 }
 /* WEATHER CARD CSS */
 .weatherCard{
@@ -103,4 +104,15 @@
     font-weight: 400;
     font-style: italic;
     font-size: 25px;
+}
+@media (max-width: 768px){
+    .weatherCard{
+        width:100%;
+    }
+    .weathercard-container{
+        height: 77%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
