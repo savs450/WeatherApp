@@ -1,0 +1,24 @@
+.heading{
+ margin:10px 0 0 0;
+}
+.search_input{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap:7px;
+    position: relative;
+}
+.search_input input{
+    width: 20%;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #3D7CC9;
+    padding-left: 10px;
+}
+.search_input span{
+    position : absolute;
+    top: 36%;
+    left: 58%;
+    transform: translateX(-50%);
+    
+}
