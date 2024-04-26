@@ -1,5 +1,11 @@
+.main_conatiner{
+    height:100vh;
+    background-size: cover; 
+    overflow: hidden;
+}
 .heading{
  margin:10px 0 0 0;
+ color: #000080;
 }
 .search_input{
     display: flex;
@@ -20,5 +26,81 @@
     top: 36%;
     left: 58%;
     transform: translateX(-50%);
-    
+}
+@media (max-width: 768px) {
+    .main_conatiner {
+        background-size: cover; 
+    }
+    .search_input{
+        padding: 10px;       
+    }
+    .search_input input{
+        width: 40%;       
+    }
+    .search_input span{
+        top: 33%;
+        left: 65%;
+    }
+    .weathercard_container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+}
+/* WEATHER CARD CSS */
+.weatherCard{
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0.2, 0.2, 0.5); 
+    padding: 10px 10px 15px 10px;
+    max-width: 300px;
+    margin: 50px auto;
+}
+.weatherCard .temperature{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px; 
+}
+.weatherCard .city{
+    font-size:16px;
+    font-weight: 600;
+    font-style: italic;
+}
+.date{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+.other_details{
+    display: flex;
+    justify-content: space-around;
+}
+.other_details .windSpeed, .humidity{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    color:#fff;
+    font-weight:400;
+}
+.other_details .windSpeed{
+    background-color:#3D7CC9 ;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.other_details .humidity{
+    background-color:#3e9334 ;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.heatIndex{
+    display: flex;
+    justify-content: space-around;
+    font-size:17px;
+    font-weight: 500;
+}
+.condition{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
 }
